@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'OpenSansSemibold';
+    src: url('../fonts/OpenSans/OpenSansSemibold_1.eot');
+    src: url('../fonts/OpenSans/OpenSansSemibold_1.eot') format('embedded-opentype'),
+         url('../fonts/OpenSans/OpenSansSemibold_1.woff2') format('woff2'),
+         url('../fonts/OpenSans/OpenSansSemibold_1.woff') format('woff'),
+         url('../fonts/OpenSans/OpenSansSemibold_1.ttf') format('truetype'),
+         url('../fonts/OpenSans/OpenSansSemibold_1.svg#OpenSansSemibold_1') format('svg');
+}
+.logo_header {
+	margin-top: 5%;
+}
+.main_logo_border {
+	height: 55px;
+	width: 155px;
+	border: 3px solid #706b73;
+	line-height: 46px;
+	text-align: center;
+}
+.main_logo p {
+	font-family: 'OpenSansSemibold', sans-serif;
+	font-size: 35px;
+	color: #706b73;
+}
+.main_logo p span {
+	color: #fa9a87;
+}
+.main_link_bar {
+	float: right;
+	width: 30px;
+	margin-top: 55px;
+}
+.burger_button, .burger_button::before, .burger_button::after {
+	width: 30px;
+	height: 4px;
+	background-color: #706b73;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+.burger_button {
+	display: block;
+	-webkit-transform: translateY(-2px);
+	-ms-transform: translateY(-2px);
+	-o-transform: translateY(-2px);
+	transform: translateY(-2px);
+	
+}
+.burger_button::before {
+	position: absolute;
+	content: '';
+	-webkit-transform: translateY(-8px);
+	-ms-transform: translateY(-8px);
+	-o-transform: translateY(-8px);
+	transform: translateY(-8px);
+}
+.burger_button::after {
+	position: absolute;
+	content: '';
+	-webkit-transform: translateY(4px);
+	-ms-transform: translateY(4px);
+	-o-transform: translateY(4px);
+	transform: translateY(4px);
+}
