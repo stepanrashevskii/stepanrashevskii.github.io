@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'OpenSansSemibold';
+    src: url('../fonts/OpenSans/OpenSansSemibold_1.eot');
+    src: url('../fonts/OpenSans/OpenSansSemibold_1.eot') format('embedded-opentype'),
+         url('../fonts/OpenSans/OpenSansSemibold_1.woff2') format('woff2'),
+         url('../fonts/OpenSans/OpenSansSemibold_1.woff') format('woff'),
+         url('../fonts/OpenSans/OpenSansSemibold_1.ttf') format('truetype'),
+         url('../fonts/OpenSans/OpenSansSemibold_1.svg#OpenSansSemibold_1') format('svg');
+}
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../fonts/OpenSans/OpenSansRegular_2.eot');
+    src: url('../fonts/OpenSans/OpenSansRegular_2.eot') format('embedded-opentype'),
+         url('../fonts/OpenSans/OpenSansRegular_2.woff2') format('woff2'),
+         url('../fonts/OpenSans/OpenSansRegular_2.woff') format('woff'),
+         url('../fonts/OpenSans/OpenSansRegular_2.ttf') format('truetype'),
+         url('../fonts/OpenSans/OpenSansRegular_2.svg#OpenSansRegular_2') format('svg');
+}
+.opn-reg {
+	font-family: 'OpenSansRegular', sans-serif;
+}
+.opn-bold {
+	font-family: 'OpenSansSemibold', sans-serif;
+}
+@base-black: #706b73;
+@base-red: #fc7254;
+@white: #fff;
+@base-text: #626262;
+@base-grey: #f5f5f5; 
+body {
+	font-size: 14px;
+	.opn-reg;
+	color: @base-text;
+}
+input, button, textarea {
+	&:focus {
+		outline: none;
+	}
+}
+header {
+	background-color: @base-grey;
+	min-height: 600px;
+	height: 100vh;
+}
+.logo_header {
+	margin-top: 5%;
+}
+.main {
+	&_logo_border {
+		height: 55px;
+		width: 155px;
+		border: 3px solid @base-black;
+		line-height: 46px;
+		text-align: center;
+	}
+	&_logo p {
+		font-family: 'OpenSansSemibold', sans-serif;
+		font-size: 35px;
+		color: @base-black;
+	}
+	&_logo p span {
+		color: lighten(@base-red, 5%);
+	}
+	&_link_bar {
+		float: right;
+		width: 30px;
+		height: 55px;
+		text-align: center;
+	}
+	&_text {
+		margin-top: 3%;
+		text-align: center;
+		h1 {
+			font-size: 50px;
+			.opn-bold;
+			span {
+				color: @base-red;
+			}
+		}
+		p {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
+	&_form {
+		margin-top: 10%;
+		padding: 35px;
+		-webkit-box-shadow: 0px 0px 57px 0px rgba(20,20,21,0.2);
+		box-shadow: 0px 0px 57px 0px rgba(20,20,21,0.2);
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		-ms-border-radius: 2px;
+		-o-border-radius: 2px;
+		border-radius: 2px;
+		&_header {
+			background-color: @white;
+			text-align: center;
+			font-size: 20px;
+			.opn-reg;
+			span {
+				color: @base-red;
+			}
+		}
+		input, textarea {
+			width: 100%;
+			border: none;
+			border-bottom: 1px solid @base-black;
+			margin-top: 30px;
+			font-size: 15px;
+		}
+		&_btn {
+			background-color: @base-red;
+			border: none;
+			font-size: 16px;
+			color: @white;
+			padding: 15px 35px;
+			display: block;
+			margin: 0 auto;
+			margin-top: 30px;
+			-webkit-border-radius: 50px;
+			-moz-border-radius: 50px;
+			-ms-border-radius: 50px;
+			-o-border-radius: 50px;
+			border-radius: 50px;
+		}
+	}
+}
+.burger_button, .burger_button::before, .burger_button::after {
+	width: 30px;
+	height: 4px;
+	background-color: @base-black;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+.burger_button {
+	display: block;
+	-webkit-transform: translateY(-2px);
+	-ms-transform: translateY(-2px);
+	-o-transform: translateY(-2px);
+	transform: translateY(-2px);
+	
+}
+.burger_button::before {
+	position: absolute;
+	content: '';
+	-webkit-transform: translateY(98px);
+	-ms-transform: translateY(-9px);
+	-o-transform: translateY(-9px);
+	transform: translateY(-9px);
+}
+.burger_button::after {
+	position: absolute;
+	content: '';
+	-webkit-transform: translateY(5px);
+	-ms-transform: translateY(5px);
+	-o-transform: translateY(5px);
+	transform: translateY(5px);
+}
