@@ -1,0 +1,261 @@
+/* Base fonts */
+@font-face {
+  font-family: 'CompProBold';
+  src: url('../fonts/PFDinTextCompProBold_0.eot');
+  src: url('../fonts/PFDinTextCompProBold_0.eot') format('embedded-opentype'), url('../fonts/PFDinTextCompProBold_0.woff2') format('woff2'), url('../fonts/PFDinTextCompProBold_0.woff') format('woff'), url('../fonts/PFDinTextCompProBold_0.ttf') format('truetype'), url('../fonts/PFDinTextCompProBold_0.svg#PFDinTextCompProBold_0') format('svg');
+}
+@font-face {
+  font-family: 'CompProLight';
+  src: url('../fonts/PFDinTextCompProLight_0.eot');
+  src: url('../fonts/PFDinTextCompProLight_0.eot') format('embedded-opentype'), url('../fonts/PFDinTextCompProLight_0.woff2') format('woff2'), url('../fonts/PFDinTextCompProLight_0.woff') format('woff'), url('../fonts/PFDinTextCompProLight_0.ttf') format('truetype'), url('../fonts/PFDinTextCompProLight_0.svg#PFDinTextCompProLight_0') format('svg');
+}
+@font-face {
+  font-family: 'CompProMedium';
+  src: url('../fonts/PFDinTextCompProMedium_0.eot');
+  src: url('../fonts/PFDinTextCompProMedium_0.eot') format('embedded-opentype'), url('../fonts/PFDinTextCompProMedium_0.woff2') format('woff2'), url('../fonts/PFDinTextCompProMedium_0.woff') format('woff'), url('../fonts/PFDinTextCompProMedium_0.ttf') format('truetype'), url('../fonts/PFDinTextCompProMedium_0.svg#PFDinTextCompProMedium_0') format('svg');
+}
+@font-face {
+  font-family: 'CompProThin';
+  src: url('../fonts/PFDinTextCompProThin.eot');
+  src: url('../fonts/PFDinTextCompProThin.eot') format('embedded-opentype'), url('../fonts/PFDinTextCompProThin.woff2') format('woff2'), url('../fonts/PFDinTextCompProThin.woff') format('woff'), url('../fonts/PFDinTextCompProThin.ttf') format('truetype'), url('../fonts/PFDinTextCompProThin.svg#PFDinTextCompProThin') format('svg');
+}
+.c-bold {
+  font-family: 'CompProBold', sans-serif;
+}
+.c-light {
+  font-family: 'CompProLight', sans-serif;
+}
+.c-medium {
+  font-family: 'CompProMedium', sans-serif;
+}
+.c-thin {
+  font-family: 'CompProThin', sans-serif;
+}
+/* Base colors */
+/* Base settings  */
+* {
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+body {
+  font-family: 'CompProMedium', sans-serif;
+  font-size: 14px;
+  color: #333333;
+  padding: 0;
+  margin: 0;
+}
+input:focus,
+button:focus,
+textarea:focus {
+  outline: none;
+}
+section {
+  padding-bottom: 8%;
+}
+.section-header {
+  padding-top: 8%;
+  padding-bottom: 7%;
+}
+.section-header h3 {
+  position: relative;
+  font-family: 'CompProMedium', sans-serif;
+  font-size: 40px;
+}
+.section-header h3:after {
+  position: absolute;
+  content: '';
+  top: 70px;
+  left: 50%;
+  -webkit-transform: translateX(-40px);
+  -ms-transform: translateX(-40px);
+  -o-transform: translateX(-40px);
+  transform: translateX(-40px);
+  display: block;
+  background-color: #6699cc;
+  width: 80px;
+  height: 4px;
+}
+button.order {
+  border: none;
+  margin-top: 10%;
+  padding: 20px 90px;
+  font-family: 'CompProBold', sans-serif;
+  font-size: 22px;
+  color: #ffffff;
+  background-color: #6699cc;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 86x;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  box-shadow: 0px 4px 20px 2px rgba(102, 153, 204, 0.6);
+}
+button.order:hover {
+  box-shadow: 0px 4px 20px 2px rgba(102, 153, 204, 0.9);
+}
+.lists {
+  margin-top: 10%;
+  list-style-image: url(../img/icons/1.png);
+}
+.lists li {
+  line-height: 22px;
+}
+.lists-item {
+  font-family: 'CompProThin', sans-serif;
+  font-size: 22px;
+  vertical-align: super;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.lists-item:hover {
+  margin-left: 10px;
+}
+/* Главная страница */
+#main .nav-contacts {
+  padding-left: 5px;
+  display: inline-block;
+}
+#main .float-head {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+#main .navbar-nav li a {
+  font-family: 'CompProMedium', sans-serif;
+  font-size: 16px;
+  color: #333333;
+  line-height: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 25px;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+#main .navbar-nav li a:hover {
+  background-color: #fff;
+  border-bottom: 3px solid #6699cc;
+}
+#main .phone .fa-phone {
+  color: #6699cc;
+  font-size: 18px;
+}
+#main .phone p {
+  font-family: 'CompProMedium', sans-serif;
+  font-size: 20px;
+}
+#main .mail .fa-envelope {
+  color: #6699cc;
+  font-size: 18px;
+}
+#main .mail p {
+  font-family: 'CompProLight', sans-serif;
+  font-size: 20px;
+}
+#main-block {
+  background: url(../img/main-bg.jpg) no-repeat center center;
+  background-size: cover;
+  min-height: 769px;
+}
+#main-block .main-block-info h1 {
+  font-family: 'CompProMedium', sans-serif;
+  font-size: 64px;
+  margin-top: 30%;
+}
+/* Производственное объединение сеть исеть */
+#production-association {
+  background-color: #f8f8f8;
+}
+#production-association .production-about {
+  padding: 60px 85px;
+}
+#production-association .production-about p {
+  padding-top: 35px;
+  padding-bottom: 0;
+  font-family: 'CompProLight', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  line-height: 24px;
+}
+#production-association .production-about p span {
+  display: block;
+  font-family: 'CompProBold', sans-serif;
+  color: #6699cc;
+  font-size: 30px;
+}
+#production-association .production-about:hover {
+  box-shadow: 0px 0px 32px 0px rgba(51, 51, 51, 0.1);
+  background-color: #ffffff;
+}
+/* Собственное производство */
+#own-production {
+  background: url(../img/fon2.jpg) no-repeat center center;
+  background-size: cover;
+}
+#own-production .in-block {
+  padding-bottom: 4%;
+}
+#own-production .inline-with-btn {
+  margin-top: 13%;
+}
+#own-production .stocks {
+  margin-top: 5%;
+}
+#own-production .stocks .left-box,
+#own-production .stocks .right-box {
+  background-color: #ffffff;
+  padding: 60px;
+  width: 570px;
+}
+#own-production .stocks .left-box .stock-ekb,
+#own-production .stocks .right-box .stock-ekb,
+#own-production .stocks .left-box .stock-msk,
+#own-production .stocks .right-box .stock-msk {
+  font-family: 'CompProBold', sans-serif;
+  font-size: 26px;
+}
+#own-production .stocks .left-box .icon-bucket,
+#own-production .stocks .right-box .icon-bucket,
+#own-production .stocks .left-box .icon-loader,
+#own-production .stocks .right-box .icon-loader,
+#own-production .stocks .left-box .icon-point,
+#own-production .stocks .right-box .icon-point,
+#own-production .stocks .left-box .icon-clock,
+#own-production .stocks .right-box .icon-clock {
+  line-height: 30px;
+}
+#own-production .stocks .left-box .icon-bucket .lists-item,
+#own-production .stocks .right-box .icon-bucket .lists-item,
+#own-production .stocks .left-box .icon-loader .lists-item,
+#own-production .stocks .right-box .icon-loader .lists-item,
+#own-production .stocks .left-box .icon-point .lists-item,
+#own-production .stocks .right-box .icon-point .lists-item,
+#own-production .stocks .left-box .icon-clock .lists-item,
+#own-production .stocks .right-box .icon-clock .lists-item {
+  padding-left: 10px;
+}
+#own-production .stocks .left-box .icon-bucket,
+#own-production .stocks .right-box .icon-bucket {
+  list-style-image: url(../img/icons/3-1.png);
+}
+#own-production .stocks .left-box .icon-loader,
+#own-production .stocks .right-box .icon-loader {
+  list-style-image: url(../img/icons/loader.png);
+}
+#own-production .stocks .left-box .icon-loader span.lists-item,
+#own-production .stocks .right-box .icon-loader span.lists-item {
+  vertical-align: baseline;
+}
+#own-production .stocks .left-box .icon-point,
+#own-production .stocks .right-box .icon-point {
+  list-style-image: url(../img/icons/point.png);
+}
+#own-production .stocks .left-box .icon-clock,
+#own-production .stocks .right-box .icon-clock {
+  list-style-image: url(../img/icons/clock.png);
+}
+#own-production .stocks .right-box {
+  margin-left: 30px;
+  padding-bottom: 92px;
+}

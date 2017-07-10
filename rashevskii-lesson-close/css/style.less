@@ -1,0 +1,280 @@
+/* Base fonts */
+@font-face {
+    font-family: 'CompProBold';
+    src: url('../fonts/PFDinTextCompProBold_0.eot');
+    src: url('../fonts/PFDinTextCompProBold_0.eot') format('embedded-opentype'),
+         url('../fonts/PFDinTextCompProBold_0.woff2') format('woff2'),
+         url('../fonts/PFDinTextCompProBold_0.woff') format('woff'),
+         url('../fonts/PFDinTextCompProBold_0.ttf') format('truetype'),
+         url('../fonts/PFDinTextCompProBold_0.svg#PFDinTextCompProBold_0') format('svg');
+}
+@font-face {
+    font-family: 'CompProLight';
+    src: url('../fonts/PFDinTextCompProLight_0.eot');
+    src: url('../fonts/PFDinTextCompProLight_0.eot') format('embedded-opentype'),
+         url('../fonts/PFDinTextCompProLight_0.woff2') format('woff2'),
+         url('../fonts/PFDinTextCompProLight_0.woff') format('woff'),
+         url('../fonts/PFDinTextCompProLight_0.ttf') format('truetype'),
+         url('../fonts/PFDinTextCompProLight_0.svg#PFDinTextCompProLight_0') format('svg');
+}
+@font-face {
+    font-family: 'CompProMedium';
+    src: url('../fonts/PFDinTextCompProMedium_0.eot');
+    src: url('../fonts/PFDinTextCompProMedium_0.eot') format('embedded-opentype'),
+         url('../fonts/PFDinTextCompProMedium_0.woff2') format('woff2'),
+         url('../fonts/PFDinTextCompProMedium_0.woff') format('woff'),
+         url('../fonts/PFDinTextCompProMedium_0.ttf') format('truetype'),
+         url('../fonts/PFDinTextCompProMedium_0.svg#PFDinTextCompProMedium_0') format('svg');
+}
+@font-face {
+    font-family: 'CompProThin';
+    src: url('../fonts/PFDinTextCompProThin.eot');
+    src: url('../fonts/PFDinTextCompProThin.eot') format('embedded-opentype'),
+         url('../fonts/PFDinTextCompProThin.woff2') format('woff2'),
+         url('../fonts/PFDinTextCompProThin.woff') format('woff'),
+         url('../fonts/PFDinTextCompProThin.ttf') format('truetype'),
+         url('../fonts/PFDinTextCompProThin.svg#PFDinTextCompProThin') format('svg');
+}
+.c-bold {
+	font-family: 'CompProBold', sans-serif;
+}
+.c-light {
+	font-family: 'CompProLight', sans-serif;
+}
+.c-medium {
+	font-family: 'CompProMedium', sans-serif;
+}
+.c-thin {
+	font-family: 'CompProThin', sans-serif;
+}
+/* Base colors */
+@bg-white: #fff;
+@bg-grey: #f8f8f8;
+@blue: #6699cc;
+@headers: #333333;
+@text: #666666;
+/* Base settings  */
+* {
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+body {
+	.c-medium;
+	font-size: 14px;
+	color: @headers;
+	padding: 0;
+	margin: 0;
+}
+input, button, textarea {
+	&:focus {
+		outline: none;
+	}
+}
+section {
+	padding-bottom: 8%;
+}
+.section-header {
+	padding-top: 8%;
+	padding-bottom: 7%;
+	h3 {
+		position: relative;
+		.c-medium;
+		font-size: 40px;
+		&:after {
+			position: absolute;
+			content: '';
+			top: 70px;
+			left: 50%;
+			-webkit-transform: translateX(-40px);
+			-ms-transform: translateX(-40px);
+			-o-transform: translateX(-40px);
+			transform: translateX(-40px);
+			display: block;
+			background-color: @blue;
+			width: 80px;
+			height: 4px;
+		}
+	}
+}
+button.order {
+			border: none;
+			margin-top: 10%;
+			padding: 20px 90px;
+			.c-bold;
+			font-size: 22px;
+			color: @bg-white;
+			background-color: @blue;
+			-webkit-border-radius: 6px;
+			-moz-border-radius: 86x;
+			-ms-border-radius: 6px;
+			-o-border-radius: 6px;
+			border-radius: 6px;
+			box-shadow: 0px 4px 20px 2px rgba(102,153,204,.6);
+			&:hover {
+				box-shadow: 0px 4px 20px 2px rgba(102,153,204,.9);
+			}
+		}
+.lists {
+			margin-top: 10%;
+			list-style-image: url(../img/icons/1.png);
+			li {
+				line-height: 22px;
+			}
+			&-item {
+				.c-thin;
+				font-size: 22px;
+				vertical-align: super;
+				-webkit-transition: all 0.2s;
+				-o-transition: all 0.2s;
+				transition: all 0.2s;
+				&:hover {
+					margin-left: 10px;
+				}
+			}
+		}
+
+/* Главная страница */
+#main {
+	.nav-contacts {
+		padding-left: 5px;
+		display: inline-block;
+	}
+	.float-head {
+		padding-top: 45px;
+		padding-bottom: 45px;
+	}
+	.logo {
+		
+	}
+	.navbar-nav {
+		li {
+			a {
+				.c-medium;
+				font-size: 16px;
+				color: @headers;
+				line-height: 0;
+				padding-left: 0;
+				padding-right: 0;
+				margin-left: 25px;
+				-webkit-transition: all 0.2s;
+				-o-transition: all 0.2s;
+				transition: all 0.2s;
+				&:hover {
+					background-color: #fff;
+					border-bottom: 3px solid @blue;
+				}
+			}
+		}
+	}
+	.phone {
+		.fa-phone {
+			color: @blue;
+			font-size: 18px;
+		}
+		p {
+			
+			.c-medium;
+			font-size: 20px;
+		}
+	}
+	.mail {
+		.fa-envelope {
+			color: @blue;
+			font-size: 18px;
+		}
+		p {
+			.c-light;
+			font-size: 20px;
+		}
+	}
+}
+
+#main-block {
+	background: url(../img/main-bg.jpg) no-repeat center center;
+	background-size: cover;
+	min-height: 769px;
+	.main-block-info {
+		h1 {
+			.c-medium;
+			font-size: 64px;
+			margin-top: 30%;
+		}
+		
+	}
+}
+
+/* Производственное объединение сеть исеть */
+#production-association {
+	background-color: @bg-grey;
+	.production-about {
+		padding: 60px 85px;
+		p {
+			padding-top: 35px;
+			padding-bottom: 0;
+			.c-light;
+			font-size: 20px;
+			text-align: center;
+			line-height: 24px;
+			span {
+				display: block;
+				.c-bold;
+				color: @blue;
+				font-size: 30px;
+			}
+		}
+		&:hover {
+			box-shadow: 0px 0px 32px 0px rgba(51, 51, 51, 0.1);
+			background-color: @bg-white;
+		}
+	}
+}
+
+/* Собственное производство */
+#own-production {
+	background: url(../img/fon2.jpg) no-repeat center center;
+	background-size: cover;
+	.in-block {
+		padding-bottom: 4%;
+	}
+	.inline-with-btn {
+		margin-top: 13%;
+	}
+	.stocks {
+		margin-top: 5%;
+		.left-box, .right-box {
+			background-color: @bg-white;
+			padding: 60px;
+			width: 570px;
+			.stock-ekb, .stock-msk {
+				.c-bold;
+				font-size: 26px;
+			}
+			.icon-bucket, .icon-loader, .icon-point, .icon-clock {
+				line-height: 30px;
+				.lists-item {
+					padding-left: 10px;
+				}
+			}  
+			.icon-bucket {
+				list-style-image: url(../img/icons/3-1.png);
+			}
+			.icon-loader {
+				span.lists-item {
+					vertical-align: baseline;
+				}
+				list-style-image: url(../img/icons/loader.png);
+			}
+			.icon-point {
+				list-style-image: url(../img/icons/point.png);
+			}
+			.icon-clock {
+				list-style-image: url(../img/icons/clock.png);
+			}
+		}
+		.right-box {
+			margin-left: 30px;
+			padding-bottom: 92px;
+		}
+	}
+}
