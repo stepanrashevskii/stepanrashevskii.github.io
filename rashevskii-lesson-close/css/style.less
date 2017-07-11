@@ -125,14 +125,14 @@ button.order {
 				.c-thin;
 				font-size: 22px;
 				vertical-align: super;
-				-webkit-transition: all 0.2s;
-				-o-transition: all 0.2s;
-				transition: all 0.2s;
 				&:hover {
 					margin-left: 10px;
 				}
 			}
 		}
+.active {
+	background-color: @bg-white;
+}
 
 /* Главная страница */
 #main {
@@ -141,8 +141,8 @@ button.order {
 		display: inline-block;
 	}
 	.float-head {
-		padding-top: 45px;
-		padding-bottom: 45px;
+		padding-top: 25px;
+		padding-bottom: 25px;
 	}
 	.logo {
 		
@@ -277,4 +277,185 @@ button.order {
 			padding-bottom: 92px;
 		}
 	}
+}
+
+/* Поставляем трубу */
+#supply {
+		.bg-grey {
+			background-color: @bg-grey;
+			.big-header {
+			&:after {
+				top: 115px;
+			}
+		}
+	}
+	.supply-list {
+		list-style-type: none;
+		padding: 0;
+		margin-bottom: 0;
+		li {
+			position: relative;
+			display: inline-block;
+			cursor: pointer;
+			width: 225px;
+			height: 250px;
+			a {
+				text-decoration: none;
+				img {
+					position: absolute;
+					bottom: 0;
+					left: 32%;
+				}
+				span {
+					display: block;
+					.c-light;
+					font-size: 20px;
+					color: @headers;
+					padding-top: 25px;
+					line-height: 22px;
+				}
+			}
+			&:hover {
+				span {
+				color: @blue;
+				}
+			}
+		}
+	}
+}
+#supply-descr {
+	background-color: @bg-white;
+	width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+	.tab-content {
+		
+	}
+	.supply {
+		&-description {
+			h4 {
+				.c-bold;
+				font-size: 32px;
+				color: @blue;
+				padding-top: 3%;
+			}
+			p {
+				.c-light;
+				font-size: 20px;
+				color: @text;
+			}
+		}
+		&-characteristics {
+			h5 {
+				.c-bold;
+				font-size: 20px;
+				text-transform: uppercase;
+				padding-top: 6%;
+			}
+			ul {
+				padding-left: 19px;
+				padding-bottom: 6%;
+				.c-light;
+				font-size: 18px;
+				color: @text;
+				li {
+					&:hover {
+						padding-left: 10px;
+					}
+				}
+			}
+		}
+		&-products {
+			&-card {
+				width: 370px;
+				padding-left: 0;
+				padding-right: 0;
+				margin-left: 3%;
+				background-color: @bg-grey;
+				img {
+					width: 370px;
+					height: 170px;
+				}
+				.marking {
+					.c-light;
+					font-size: 20px;
+					text-align: center;
+					padding-top: 7%;
+					color: @text;
+				}
+				.price {
+					.c-bold;
+					font-size: 26px;
+					text-align: center;
+				}
+				.buy {
+					margin: 0 0 10% 14%;
+					padding-left: 100px;
+					padding-right: 100px;
+				}
+				&:hover img {
+					opacity: .8;
+				}
+			}
+			.no-margin {
+					margin-left: 0;
+				}
+		}
+	}
+}
+/* В наличии на складе */
+#presence {
+	background-color: @bg-grey;
+	.fitingi {
+		width: 370px;
+		margin-left: 1%;
+		padding: 30px;
+		background-color: @bg-white;
+		&:hover {
+			box-shadow: 0px 0px 30px 3px rgba(0,0,0,.1);
+		}
+		&-description {
+			h5 {
+				.c-medium;
+				font-size: 20px;
+			}
+			ul {
+				padding-left: 20px;
+				.c-light;
+				font-size: 17px;
+				color: @text;
+				line-height: 20px;
+				li {
+					&:hover {
+						padding-left: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+/* Почему нас выбирают */
+#why-us {
+	background-color: @bg-grey;
+	.info-card {
+		height: 350px;
+		padding: 60px 30px;	
+		img {
+		vertical-align: baseline;
+		}
+		h4 {
+			.c-bold;
+			font-size: 20px;
+		}
+		p {
+			.c-light;
+			font-size: 20px;
+			color: @text;
+		}
+		&:hover {
+			background-color: @bg-white;
+			box-shadow: 0px 0px 30px 3px rgba(0,0,0,.1);
+		}
+	}
+	
 }
