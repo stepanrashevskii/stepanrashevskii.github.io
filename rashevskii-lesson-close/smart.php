@@ -3,7 +3,7 @@
 $name=$_POST['name'];
 $email=$_POST['email'];
 $message=$_POST['message'];
-$whatever=$_POST['whatever'];
+
 
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
@@ -14,10 +14,10 @@ $mail->CharSet = 'utf-8';
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'rashewskii@gmail.com';                 // SMTP username
+$mail->Username = 'rashworks4@gmail.com';                 // SMTP username
 $mail->Password = '59elhovka8891';                           // SMTP password
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 993;                                    // TCP port to connect to
+$mail->Port = 465;                                    // TCP port to connect to
 
 $mail->setFrom('tunerauto@inbox.ru', 'Ildar S. Zhiganshin');
 $mail->addAddress('rashewskii@yandex.ru', 'Joe User');     // Add a recipient
